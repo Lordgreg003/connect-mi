@@ -1,0 +1,68 @@
+.animate__bounce.animate__slideInRight {
+  --animate-duration: 2s;
+}
+.hamburger {
+  cursor: pointer;
+  width: 44px;
+  height: 40px;
+  transition: all 0.25s;
+  position: relative;
+  background-color: #e0e0e0;
+  border-width: 2px;
+  border-radius: 5px;
+}
+
+.hamburger-bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 2px;
+  background: #000;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburger-middle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 28px;
+  height: 2px;
+  background: #000;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+.hamburger-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 32px;
+  height: 2px;
+  background: #000;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburger-middle {
+  transform: translateY(7px);
+}
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+
+.open {
+  transform: rotate(90deg);
+  transform: translateY(0px);
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(5px) translate(6px);
+}
+
+.open .hamburger-middle {
+  display: none;
+}
+.open .hamburger-bottom {
+  transform: rotate(-40deg) translateY(10px) translate(-0px);
+}
